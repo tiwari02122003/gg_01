@@ -126,61 +126,6 @@ export default function Menu() {
           ))}
         </div>
       </section>
-      {/* <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Pre Workout meal</h2>    
-      <section className="flex flex-wrap justify-center gap-4 p-4">
-        {PreWorkoutBoosters.map((meal, index) => (
-          <button
-            key={index}
-            className=" text-white px-4 py-2 rounded shadow-md hover:bg-green-700 transition bg-green-500 "
-          >
-            {meal}
-          </button>
-        ))}
-      </section>
-      <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Post Workout Recovery</h2>    
-      <section className="flex flex-wrap justify-center gap-4 p-4">
-        {postWorkoutRecovery.map((meal, index) => (
-          <button
-            key={index}
-            className="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 transition"
-          >
-            {meal}
-          </button>
-        ))}
-      </section>
-      <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Any Time Healthy Snack</h2>    
-      <section className="flex flex-wrap justify-center gap-4 p-4">
-        {anytimeHealthySnack.map((meal, index) => (
-          <button
-            key={index}
-            className="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 transition"
-          >
-            {meal}
-          </button>
-        ))}
-      </section>
-      <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Beverages</h2>    
-      <section className="flex flex-wrap justify-center gap-4 p-4">
-        {beverages.map((meal, index) => (
-          <button
-            key={index}
-            className="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 transition"
-          >
-            {meal}
-          </button>
-        ))}
-      </section>
-      <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Speciality Item</h2>    
-      <section className="flex flex-wrap justify-center gap-4 p-4">
-        {specialityItem.map((meal, index) => (
-          <button
-            key={index}
-            className="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 transition"
-          >
-            {meal}
-          </button>
-        ))}
-      </section>                         */}
       <h2 className="text-2xl text-center mb-8 mt-5 font-mono">Pre Workout Meals</h2>
        <section>
             <Card />

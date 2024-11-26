@@ -13,16 +13,16 @@ export async function GET(req) {
 }
 
 export async function POST(req) {
-  const { item_name, sub_category, category, amount, availability, photo } = await req.json();
+  const { id,item_name, description, category, amount, availability, photo } = await req.json();
 
-  if (!item_name || !sub_category || !category || amount == null || availability == null || !photo) {
+  if (!item_name || !description || !category|| amount == null || availability == null || !photo) {
     return new Response(JSON.stringify({ error: 'All fields are required.' }), { status: 400 });
   }
 
   return new Promise((resolve) => {
     db.query(
-      'INSERT INTO menu (id,item_name, sub_category, category, amount, availability, photo) VALUES (?, ?, ?, ?, ?, ?)',
-      [id,item_name, sub_category, category, amount, availability, photo],
+      'INSERT INTO menu (id,item_name, description, category, amount, availability, photo) VALUES (?, ?, ?, ?, ?, ?)',
+      [id,item_name, description, category, amount, availability, photo],
       (err) => {
         if (err) {
           resolve(new Response(JSON.stringify({ error: err.message }), { status: 500 }));

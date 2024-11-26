@@ -28,8 +28,8 @@ export function Navbar() {
             <Link href="#" className="text-gray-800 hover:text-green-500 font-mono">
               PRICING
             </Link>
-            <Link href="#" className="text-gray-800 hover:text-green-500 font-mono">
-              BLOG
+            <Link href="/addproduct" className="text-gray-800 hover:text-green-500 font-mono">
+              ADMIN
             </Link>
           </div>
 
